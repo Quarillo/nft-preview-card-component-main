@@ -6,43 +6,42 @@
 
 /* colors */
 body {
-    background-color: rgb(13,26,45);
+    background-color: hsl(217, 54%, 11%);
 }
 .main-container {
-    background-color: rgb(21,39,63);
+    background-color: hsl(216, 50%, 16%);
 }
 
 /* text */
 
 .title-text {
-    color: rgb(255,255,255);
-    font-family: 'Assistant', sans-serif;
-    font-size: 1.375em;
-    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
 }
 .description {
     color: rgb(146,167,198);
-    font-family: 'Assistant', sans-serif;
-    font-size: 1.25em;
-    font-weight: 100;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
     line-height: 1.5em;
 }
 .small-text {
-    font-family: 'Assistant', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-size: 1.125em;
 }
 .price-text {
-    color:rgb(29,253,245);
-    font-weight: 700;
+    color:hsl(178, 100%, 50%);
+    font-weight: 600;
 }
-.time-text {
-    color: rgb(132,167,209);
+.small-text.soft-blue-text {
+    font-weight: 400;
 }
-.constant {
-    color: rgb(146,167,198);
+.soft-blue-text {
+    color: hsl(215, 51%, 70%);
 }
-.author  {
-    color: rgb(255,255,255);
+.white-text {
+    color: hsl(0, 0%, 100%);
 }
 
 /* sizing and display */
@@ -94,7 +93,7 @@ body {
     padding-right: 7px;
 }
 hr {
-    border-color: rgb(47,65,89);
+    border-color: hsl(215, 32%, 27%);
 }
 .author {
     padding-top: 15px;
@@ -107,8 +106,8 @@ hr {
     border-radius: 100%;
     border-color: white;
     border-width: 1px;
-    margin-right: 15px;
+    margin-right: 10px;
 }
-.constant {
-    padding-right: 3px;
+.small-text.soft-blue-text {
+    padding-right: 5px;
 }
