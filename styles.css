@@ -62,17 +62,31 @@ body {
     display: flex;
     justify-content: center;
     max-width: fit-content;
-    padding-bottom: 30px;
 }
-.picture img {
+.picture img, .overlay{
     width: 300px;
     height: 300px;
     border-radius: 10px;
 }
+.overlay{
+    position:absolute;
+    background-color: hsl(178, 100%, 50%);
+    top: 20%;
+    opacity: 0;
+}
+
+.overlay-image img{
+    position: absolute;
+    top: 34%;
+    left: 48.75%;
+    opacity: 0;
+}
+
 .title-text {
     padding-bottom: 20px;
 }
 .text {
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 .info-text {
@@ -110,4 +124,22 @@ hr {
 }
 .small-text.soft-blue-text {
     padding-right: 5px;
+}
+
+/* hover states */
+
+.small-text.white-text:hover, .title-text.white-text:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.overlay:hover {
+    position:absolute;
+    background-color: hsl(178, 100%, 50%);
+    top: 20%;
+    opacity: 0.3;
+    cursor: pointer;
+}
+.overlay:hover + .overlay-image img{
+    opacity: 1;
 }
