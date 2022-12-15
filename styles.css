@@ -63,23 +63,10 @@ body {
     justify-content: center;
     max-width: fit-content;
 }
-.picture img, .overlay{
+.picture img{
     width: 300px;
     height: 300px;
     border-radius: 10px;
-}
-.overlay{
-    position:absolute;
-    background-color: hsl(178, 100%, 50%);
-    top: 20%;
-    opacity: 0;
-}
-
-.overlay-image img{
-    position: absolute;
-    top: 34%;
-    left: 48.75%;
-    opacity: 0;
 }
 
 .title-text {
@@ -133,13 +120,3 @@ hr {
     cursor: pointer;
 }
 
-.overlay:hover {
-    position:absolute;
-    background-color: hsl(178, 100%, 50%);
-    top: 20%;
-    opacity: 0.3;
-    cursor: pointer;
-}
-.overlay:hover + .overlay-image img{
-    opacity: 1;
-}
